@@ -38,12 +38,15 @@
     [super viewDidLoad];
     [self setupContext];
     [self setupEAGLLayer];
+    
 //    [self deleteBuffer];
     [self setupBuffer];
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     glViewport(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
+    
+    //去除注释画出图片  panitViewController可以涂抹
 //    [self compileShader];
 //    [self setupTexture];
 
